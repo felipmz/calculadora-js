@@ -1,0 +1,45 @@
+   <!DOCTYPE html>
+   <html lang="pt-br">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+    
+    <div id="All">
+
+        <h1>Calculadora</h1>
+
+        <div id="cxtaq">
+          <div>  N°1 <input id="Cxt1" class="cxt" type="number"></div>
+          <div>  N°2 <input id="Cxt2" class="cxt"  type="number"></div>
+        </div>
+
+
+        <div id="boxOpitar">
+            <input type="image" id="box" src="https://cdn-icons-png.flaticon.com/512/66/66889.png" onclick="sub()" >
+
+            <input type="image" id="box" src="https://cdn-icons-png.flaticon.com/512/58/58253.png" onclick="mul()" >
+
+            <input type="image" id="box" src="https://cdn-icons-png.flaticon.com/128/262/262041.png" onclick="div()" >
+
+            <input type="image" id="box" src="https://cdn-icons-png.flaticon.com/512/262/262038.png" onclick="soma()" >
+        </div>
+
+        <div id="limpar">
+            <button onclick="limpar()" style="border-radius: 5px;font-size: 25px;border: none;margin-top: 22px; cursor: pointer;background-color: rgb(177, 11, 11);color: #fff;font-family: Arial, Helvetica, sans-serif;">Limpar</button>
+        </div>
+        
+
+        <div id="boxResu">
+            <h2 id="resu"></h2>
+        </div>
+        <script src="pgjs.js"></script>
+    </div>
+   </body>
+
+   </html>
