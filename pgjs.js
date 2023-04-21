@@ -1,21 +1,20 @@
-
+// botão criando as variaveis
 var cxt1 = document.getElementById("Cxt1")
 var cxt2 = document.getElementById("Cxt2")
 var resu = document.getElementById("resu")
 p = Number([]) 
 
-// cxt1 = Number(cxt1.value)
-// cxt2 = Number(cxt2.value)
 
-//limpar
+
+// botão limpar
 function limpar(){
    window.location.reload();
-   
+
 
 }
 
 
-
+// botão subtrir
 function sub(){
     cxt1 = Number(cxt1.value)
     cxt2 = Number(cxt2.value)
@@ -32,7 +31,7 @@ function sub(){
         window.location.reload();
      }
 }
-
+// botão multiplicar
 function mul(){
    
    cxt1 = Number(cxt1.value)
@@ -50,6 +49,7 @@ function mul(){
         window.location.reload();
      }
 }
+// botão dividir
 function div(){
     cxt1 = Number(cxt1.value)
     cxt2 = Number(cxt2.value)
@@ -66,6 +66,7 @@ function div(){
         window.location.reload();
      }
 }
+// botão soma
 function soma(){
    cxt1 = Number(cxt1.value)
    cxt2 = Number(cxt2.value)
