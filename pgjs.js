@@ -10,10 +10,7 @@ p = Number([])
 //limpar
 function limpar(){
    window.location.reload();
-  /*
-   cxt1.value=[]
-   cxt2.value=[]
-   resu.innerText=''*/
+   
 
 }
 
@@ -24,49 +21,68 @@ function sub(){
     cxt2 = Number(cxt2.value)
      if (cxt1 >= 1 && cxt2 >= 1) {
         p = cxt1 - cxt2
-        resu.innerText=(Math.round(p))
+        resu.innerText=(p)
+        if(p > 9999 || p < -9999){
+         resu.style.width="250px"
+        }
      }
+     
      else{
         window.alert("Algo deu errado, confira os valores!")
+        window.location.reload();
      }
 }
 
 function mul(){
-    cxt1 = Number(cxt1.value)
+   
+   cxt1 = Number(cxt1.value)
     cxt2 = Number(cxt2.value)
+
      if (cxt1 >= 1 && cxt2 >= 1) {
         p = cxt1 * cxt2
         resu.innerText=(p)
+        if(p > 9999){
+         resu.style.width="250px"
+        }
      }
      else{
         window.alert("Algo deu errado, confira os valores!")
+        window.location.reload();
      }
 }
 function div(){
     cxt1 = Number(cxt1.value)
     cxt2 = Number(cxt2.value)
+
      if (cxt1 >= 1 && cxt2 >= 1) {
         p = cxt1 / cxt2
         resu.innerText=(p)
+        if(p > 9999){
+         resu.style.width="250px"
+        }
      }
      else{
         window.alert("Algo deu errado, confira os valores!")
+        window.location.reload();
      }
 }
 function soma(){
-    cxt1 = Number(cxt1.value)
-    cxt2 = Number(cxt2.value)
-     if (cxt1 >= 1 && cxt2 >= 1) {
-        p = cxt1 + cxt2
-        resu.innerText=(p)
-        
-     }
-     if (cxt1 < 1 && cxt2 < 1 ){
-        window.alert("Algo deu errado, confira os valores!")
-     }
+   cxt1 = Number(cxt1.value)
+   cxt2 = Number(cxt2.value)
+
+    if (cxt1 >= 1 && cxt2 >= 1) {
+       p = cxt1 + cxt2
+       resu.innerText=(p)
+       if(p > 9999){
+        resu.style.width="250px"
+       }
+    }
+    else{
+       window.alert("Algo deu errado, confira os valores!")
+       window.location.reload();
+    }
 }
 
 
-// resu se adaptar na resultados grandes
-// poder mudar a operação 
+
 
